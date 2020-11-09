@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cathedra Gallery</title>
+  <title>Student discipline</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -112,54 +112,73 @@
     </div>
   </header>
   <main>
-    <section class="catherda-gallery">
+    <section class="student-discipline">
       <div class="container">
-        <h1>Галерея</h1>
-        <div class="catherda-gallery__list">
-          <div class="catherda-gallery-item">
-            <div class="catherda-gallery-item__img"><img src="assets/img/catherda/gallery-1.jpg" alt="text"></div>
-            <a href="#" class="catherda-gallery-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Lectus enim tortor vestibulum sed elit feugiat eget feugiat quam.</a>
-            <div class="catherda-gallery-item__date">21/02/2020</div>
+        <h1>Навчальні дисципліни</h1>
+        <div class="student-discipline-tabs__big">
+          <div class="student-discipline-tabs__big-controls">
+            <a href="#bigTab1" class="student-discipline-tabs__big-link student-discipline-tabs__link_active">Бакалавр</a>
+            <a href="#bigTab2" class="student-discipline-tabs__big-link">Магістр</a>
           </div>
-          <div class="catherda-gallery-item">
-            <div class="catherda-gallery-item__img"><img src="assets/img/catherda/gallery-2.jpg" alt="text"></div>
-            <a href="#" class="catherda-gallery-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Quisque pellentesque accumsan viverra vestibulum aliquam.</a>
-            <div class="catherda-gallery-item__date">12/05/2020</div>
-          </div>
-          <div class="catherda-gallery-item">
-            <div class="catherda-gallery-item__img"><img src="assets/img/catherda/gallery-3.jpg" alt="text"></div>
-            <a href="#" class="catherda-gallery-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="catherda-gallery-item__date">03/07/2020</div>
-          </div>
-          <div class="catherda-gallery-item">
-            <div class="catherda-gallery-item__img"><img src="assets/img/catherda/gallery-1.jpg" alt="text"></div>
-            <a href="#" class="catherda-gallery-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Lectus enim tortor vestibulum sed elit feugiat eget feugiat quam.</a>
-            <div class="catherda-gallery-item__date">21/02/2020</div>
-          </div>
-          <div class="catherda-gallery-item">
-            <div class="catherda-gallery-item__img"><img src="assets/img/catherda/gallery-2.jpg" alt="text"></div>
-            <a href="#" class="catherda-gallery-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Quisque pellentesque accumsan viverra vestibulum aliquam.</a>
-            <div class="catherda-gallery-item__date">12/05/2020</div>
-          </div>
-          <div class="catherda-gallery-item">
-            <div class="catherda-gallery-item__img"><img src="assets/img/catherda/gallery-3.jpg" alt="text"></div>
-            <a href="#" class="catherda-gallery-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="catherda-gallery-item__date">03/07/2020</div>
+          <div class="student-discipline-tabs__big-content">
+            <div class="student-discipline-tabs__big-tab student-discipline-tabs__big-tab_active" id="bigTab1">
+              <div class="student-discipline-tabs__small">
+                <div class="student-discipline-tabs__small-controls">
+                  <a href="#smallTab1" class="student-discipline-tabs__small-link student-discipline-tabs__link_active">Обов’язкові навчальні дисципліни</a>
+                  <a href="#smallTab2" class="student-discipline-tabs__small-link">Дисципліни вільного вибору студента</a>
+                </div>
+                <div class="student-discipline-tabs__small-content">
+                  <div class="student-discipline-tabs__small-tab student-discipline-tabs__small-tab_active" id="smallTab1">
+                    <div class="student-discipline-tabs__items">
+                      <div class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text"><span>Навчальні дисципліни</span></div>
+                        <div class="student-discipline-tabs__item-size"><span>Обсяг</span></div>
+                      </div>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Іноземна мова за професійним спрямуванням</div>
+                        <div class="student-discipline-tabs__item-size">120</div>
+                      </a>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Основи математики</div>
+                        <div class="student-discipline-tabs__item-size">90</div>
+                      </a>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Дискретна математика (з використанням інформаційних технологій)</div>
+                        <div class="student-discipline-tabs__item-size">105</div>
+                      </a>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Основи програмування</div>
+                        <div class="student-discipline-tabs__item-size">130</div>
+                      </a>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Вступ до об'єктно-орієнтованого програмування</div>
+                        <div class="student-discipline-tabs__item-size">150</div>
+                      </a>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Основи програмної інженерії</div>
+                        <div class="student-discipline-tabs__item-size">120</div>
+                      </a>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Об'єктно-орієнтоване конструювання програм</div>
+                        <div class="student-discipline-tabs__item-size">90</div>
+                      </a>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Прикладна математика</div>
+                        <div class="student-discipline-tabs__item-size">90</div>
+                      </a>
+                      <a href="#" class="student-discipline-tabs__item">
+                        <div class="student-discipline-tabs__item-text">Теорія ймовірностей та математична статистика (з використанням інформаційних технологій)</div>
+                        <div class="student-discipline-tabs__item-size">60</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="student-discipline-tabs__small-tab" id="smallTab2">text small</div>
+                </div>
+              </div>
+            </div>
+            <div class="student-discipline-tabs__big-tab" id="bigTab2">text big</div>
           </div>
         </div>
-        <ul class="pagination">
-          <li><a href="#"><</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">></a></li>
-        </ul>
       </div>
     </section>
   </main>
@@ -281,5 +300,24 @@
 
 <script src="libs/jquery-3.5.1.min.js"></script>
 <script src="assets/js/custom.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.student-discipline-tabs__big-link, .student-discipline-tabs__small-link').click(function (e) {
+      e.preventDefault();
+      var tabID = $(this).attr('href');
+      if($(this).hasClass('student-discipline-tabs__small-link')){
+        $('.student-discipline-tabs__small-link').removeClass('student-discipline-tabs__link_active');
+        $(this).addClass('student-discipline-tabs__link_active');
+        $('.student-discipline-tabs__small-tab').removeClass('student-discipline-tabs__small-tab_active');
+        $('.student-discipline-tabs__small-tab'+tabID).addClass('student-discipline-tabs__small-tab_active');
+      }else{
+        $('.student-discipline-tabs__big-link').removeClass('student-discipline-tabs__link_active');
+        $(this).addClass('student-discipline-tabs__link_active');
+        $('.student-discipline-tabs__big-tab').removeClass('student-discipline-tabs__big-tab_active');
+        $('.student-discipline-tabs__big-tab'+tabID).addClass('student-discipline-tabs__big-tab_active');
+      }
+    });
+  })
+</script>
 </body>
 </html>

@@ -61,5 +61,35 @@ $( document ).ready(function() {
       ]
     });
   }
+  // news single other slider
+  if($('.news-page-single__other-slider-inner').length > 0){
+    $('.news-page-single__other-slider-inner').slick({
+      dots: false,
+      arrows: true,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.news__slider-prev'),
+      nextArrow: $('.news__slider-next'),
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            dots: true
+          }
+        }
+      ]
+    });
+  }
 
 });
