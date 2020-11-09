@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+  // map
+
   // mob nav
   $('.mob-nav').click(function () {
     $('.navigation').toggleClass('navigation_opened');
