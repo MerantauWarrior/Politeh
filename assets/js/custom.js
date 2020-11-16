@@ -93,5 +93,16 @@ $( document ).ready(function() {
       ]
     });
   }
+  // 5 Course tabs
+  if($('.student-entry-step').length > 0){
+    $('.student-entry-step').click(function () {
+      $('.student-entry-step').removeClass('student-entry-step_active');
+      $(this).addClass('student-entry-step_active');
+      var tab = $(this).data('id');
+      $('.student-entry-tab').removeClass('student-entry-tab_opened');
+      $('.student-entry-tab#'+tab).addClass('student-entry-tab_opened');
+    });
+  }
+
 
 });

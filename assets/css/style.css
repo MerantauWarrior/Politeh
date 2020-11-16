@@ -361,6 +361,7 @@ h1{
     margin-right: 40px;
 }
 .footer-address__map{
+    width: 100%;
     max-width: 390px;
     height: 252px;
     padding: 17px 14px;
@@ -371,7 +372,9 @@ h1{
     border-radius: 10px;
 }
 #map{
-    width: 360px;
+    width: 100%;
+    min-width: 290px;
+    max-width: 360px;
     height: 216px;
 }
 .footer-address__contacts-line{
@@ -1387,6 +1390,203 @@ h1{
     display: flex;
     justify-content: center;
     margin-top: 46px;
+}
+/*5 Course*/
+.student-entry__steps-title{
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.student-entry__steps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.student-entry-step{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 222px;
+    height: 246px;
+    margin-top: 84px;
+    padding: 12px 15px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    border: 4px solid #00528E;
+}
+.student-entry-step:hover,
+.student-entry-step_active{
+    background-color: rgba(0, 82, 142, 0.05);
+    cursor: pointer;
+}
+.student-entry-step__icon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 107px;
+    height: 107px;
+    margin-left: -54px;
+    margin-top: -56px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #00528E;
+    border: 7px solid #FFFFFF;
+}
+.student-entry-step__text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.student-entry-step:nth-child(2) .student-entry-step__text{
+    max-width: 124px;
+    margin-top: auto;
+}
+.student-entry-step__info{
+    margin-top: 18px;
+    padding: 14px 7px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #00528E;
+    background-color: #EFF323;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.student-entry__tabs{
+    margin-top: 58px;
+}
+.student-entry-tab{
+    display: none;
+}
+.student-entry-tab_opened{
+    display: block;
+}
+.student-entry-tab__title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+}
+.student-entry-tab__title-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    min-width: 31px;
+    height: 31px;
+    margin-right: 20px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #00528E;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.student-entry-tab__title-text{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #00528E;
+}
+.student-entry-tab-list{
+    margin-left: 40px;
+}
+.student-entry-tab-list-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.student-entry-tab-list-item__text{
+    width: 100%;
+    max-width: 364px;
+}
+.student-entry-tab-list-item__icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background: transparent url('../img/student/entry-steps-tabs-list-mark.svg') center center no-repeat;
+    background-size: contain;
+}
+.student-entry-tab-list-item__info{
+    position: relative;
+    width: 100%;
+    max-width: 402px;
+    margin-left: 60px;
+    padding: 4px 18px;
+    background-color: #00528E;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.student-entry-tab-list-item__info:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -45px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    background: transparent url('../img/student/entry-steps-tabs-list-arrow.svg') center center no-repeat;
+    background-size: contain;
+}
+.student-entry-tab__subtitle{
+    display: inline-block;
+    margin-left: 40px;
+    margin-bottom: 29px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #00528E;
+}
+.student-entry-tab-list__check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 315px;
+    height: 47px;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    border: 1px solid #00528E;
+    background-color: #EFF323;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.student-entry-tab-list-item__check{
+    width: 100%;
+    max-width: 571px;
+    padding: 13px 40px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #00528E;
+    background-color: #EFF323;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #000000;
 }
 /*NEWS*/
 /*News page*/

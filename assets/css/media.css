@@ -4,6 +4,11 @@
     }
 }
 @media all and (min-width: 320px) and (max-width: 768px){
+    /*General*/
+    .pagination a{
+        margin: 10px;
+    }
+    /*Header*/
     .header{
         padding: 15px 0;
     }
@@ -186,5 +191,53 @@
     .science-materials-item__content{
         margin-left: 0;
         margin-top: 10px;
+    }
+    .science-publications__head{
+        display: none;
+    }
+    .science-publications__item{
+        flex-wrap: wrap;
+    }
+    .science-publications__col:not(:nth-child(1)){
+        max-width: 60px !important;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    /*STUDENTS*/
+    /*Discipline*/
+    .student-discipline-tabs__item-text{
+        max-width: 80%;
+        padding-right: 15px;
+    }
+    .student-discipline-tabs__item-size{
+        max-width: 20%;
+        padding-left: 15px;
+    }
+    .student-discipline-tabs__small-link{
+        margin-right: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    /*Entry*/
+    .student-entry-item{
+        max-width: 100%;
+    }
+    /*Schedule*/
+    .student-schedule__items{
+        justify-content: center;
+    }
+    /*5   Course*/
+    .student-entry__steps{
+        justify-content: center;
+    }
+    .student-entry-tab-list-item__text{
+        max-width: calc(100% - 40px);
+    }
+    .student-entry-tab-list-item__info,
+    .student-entry-tab-list-item__check{
+        margin-top: 10px;
+    }
+    .student-entry-tab-list__check{
+        margin-left: 0;
     }
 }
