@@ -240,4 +240,8 @@
     .student-entry-tab-list__check{
         margin-left: 0;
     }
+    /*Process*/
+    .contact-form__col{
+        width: 100%;
+    }
 }

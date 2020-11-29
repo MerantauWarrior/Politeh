@@ -110,6 +110,20 @@ h1{
 .additional-link:hover svg{
     fill: #FFFFFF;
 }
+.responsive-table{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+table{
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th,td{
+    vertical-align: center;
+    padding: 10px;
+    border: 1px solid #00528E;
+}
 /*Header*/
 .header__inner{
     position: relative;
@@ -1650,4 +1664,109 @@ h1{
 }
 .news-page-single__other-slider .news__slider-next{
     right: 0;
+}
+/*Process*/
+.science-process{
+    padding-bottom: 80px;
+}
+.science-process__table{
+    margin: 40px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.science-process__table th{
+    color: #00528E;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.science-process__table th:nth-child(1),
+.science-process__table th:nth-child(2),
+.science-process__table th:nth-child(3),
+.science-process__table th:nth-child(4),
+.science-process__table th:nth-child(6),
+.science-process__table th:nth-child(9),
+.science-process__table th:nth-child(10){
+    vertical-align: bottom;
+}
+.science-process__table select{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #00528E;
+}
+/*contact form compoent*/
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact-form__title{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.contact-form__col{
+    width: 48%;
+}
+.contact-form__field{
+    margin-bottom: 20px;
+}
+.inp-contact-form,
+.txt-contact-form{
+    width: 100%;
+    border: 1px solid #00528E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #00528E;
+}
+.inp-contact-form{
+    height: 40px;
+    padding: 0 10px;
+    line-height: 38px;
+}
+.txt-contact-form{
+    height: 160px;
+    padding: 15px 10px;
+    resize: none;
+}
+.inp-contact-form::-webkit-input-placeholder,
+.txt-contact-form::-webkit-input-placeholder {
+    color: #333333;
+}
+.inp-contact-form::-moz-placeholder,
+.txt-contact-form::-moz-placeholder {
+    color: #333333;
+}
+.inp-contact-form:-ms-input-placeholder,
+.txt-contact-form:-ms-input-placeholder {
+    color: #333333;
+}
+.inp-contact-form:-moz-placeholder,
+.txt-contact-form:-moz-placeholder {
+    color: #333333;
+}
+.contact-form__btn{
+    margin: 0 auto;
+}
+.btn-contact-form{
+    display: block;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #00528E;
+    font-size: 16px;
+    line-height: 38px;
+    color: #FFFFFF;
+    background-color: #00528E;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-contact-form:hover{
+    color: #00528E;
+    background-color: #FFFFFF;
 }
