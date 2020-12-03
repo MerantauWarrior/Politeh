@@ -103,6 +103,14 @@ $( document ).ready(function() {
       $('.student-entry-tab#'+tab).addClass('student-entry-tab_opened');
     });
   }
-
+  // Popup close
+  $(document).click(function (e) {
+    if(e.target === $('.popup-after-submit')[0]){
+      $('.popup-after-submit').hide();
+    }
+  });
+  $('.popup-after-submit__close').click(function () {
+    $('.popup-after-submit').hide();
+  });
 
 });

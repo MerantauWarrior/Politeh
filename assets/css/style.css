@@ -1027,7 +1027,20 @@ th,td{
     border-bottom: 1px solid rgba(0, 82, 142, 0.5);
 }
 .catherda-gallery-item__img{
+    position: relative;
+    padding-bottom: 56.25%;
     margin-bottom: 14px;
+}
+.catherda-gallery-item__img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .catherda-gallery-item__title{
     margin-bottom: 20px;
@@ -1769,4 +1782,77 @@ th,td{
 .btn-contact-form:hover{
     color: #00528E;
     background-color: #FFFFFF;
+}
+/*Popup after form submit*/
+.popup-after-submit{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+.popup-after-submit__window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 15px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #00528E url('../img/home/project-start.svg') 0 0 no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+.popup-after-submit__close{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #00528E;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+.popup-after-submit__close:before,
+.popup-after-submit__close:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    margin-left: -8px;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #fff;
+}
+.popup-after-submit__close:before{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.popup-after-submit__close:after{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.popup-after-submit__title{
+    margin-bottom: 10px;
+    font-size: 24px;
 }

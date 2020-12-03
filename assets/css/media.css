@@ -244,4 +244,8 @@
     .contact-form__col{
         width: 100%;
     }
+    /*Popup after form submit*/
+    .popup-after-submit__window{
+        max-width: 90%;
+    }
 }
