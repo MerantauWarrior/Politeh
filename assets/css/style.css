@@ -1163,16 +1163,19 @@ th,td{
 .student-discipline-tabs__big{
     margin-top: 40px;
 }
-.student-discipline-tabs__small{
+.student-discipline-tabs__small,
+.student-discipline-tabs__very-small{
     margin-top: 24px;
 }
 .student-discipline-tabs__big-controls,
-.student-discipline-tabs__small-controls{
+.student-discipline-tabs__small-controls,
+.student-discipline-tabs__very-small-controls{
     display: flex;
     flex-wrap: wrap;
 }
 .student-discipline-tabs__big-link,
-.student-discipline-tabs__small-link{
+.student-discipline-tabs__small-link,
+.student-discipline-tabs__very-small-link{
     display: flex;
     align-items: center;
     margin-right: 30px;
@@ -1181,29 +1184,34 @@ th,td{
     line-height: 22px;
     color: rgba(33, 33, 33, 0.3);
 }
-.student-discipline-tabs__small-link{
+.student-discipline-tabs__small-link,
+.student-discipline-tabs__very-small-link{
     margin-right: 22px;
     font-size: 14px;
     line-height: 17px;
 }
 .student-discipline-tabs__big-link:not(:last-child):after,
-.student-discipline-tabs__small-link:not(:last-child):after{
+.student-discipline-tabs__small-link:not(:last-child):after,
+.student-discipline-tabs__very-small-link:not(:last-child):after{
     content: "";
     width: 1px;
     height: 17px;
     margin-left: 30px;
     background-color: rgba(0, 0, 0, 0.2);
 }
-.student-discipline-tabs__small-link:not(:last-child):after{
+.student-discipline-tabs__small-link:not(:last-child):after,
+.student-discipline-tabs__very-small-link:not(:last-child):after{
     margin-left: 22px;
 }
 .student-discipline-tabs__link_active{
     color: #212121;
 }
+.student-discipline-tabs__very-small-tab,
 .student-discipline-tabs__small-tab,
 .student-discipline-tabs__big-tab{
     display: none;
 }
+.student-discipline-tabs__very-small-tab_active,
 .student-discipline-tabs__small-tab_active,
 .student-discipline-tabs__big-tab_active{
     display: block;
