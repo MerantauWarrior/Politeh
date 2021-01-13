@@ -87,10 +87,7 @@
     .footer-navigation__list_opened{
         display: block;
     }
-    .footer-address{
-        margin-top: 30px;
-        margin-right: 0;
-    }
+    .footer-address,
     .footer-address__contacts{
         margin-top: 30px;
     }
